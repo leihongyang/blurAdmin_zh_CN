@@ -1,0 +1,20 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" ng-click="$dismiss()" aria-label="Close">
+      <em class="ion-ios-close-empty sn-link-close"></em>
+    </button>
+    <h4 class="modal-title" id="myModalLabel">添加账号</h4>
+  </div>
+  <form name="linkForm">
+    <div class="modal-body">
+      <p>将链接粘贴到您的个人资料到下面的框中</p>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="资料链接" ng-model="link">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" ng-click="ok(link)">保存</button>
+    </div>
+  </form>
+</div>
